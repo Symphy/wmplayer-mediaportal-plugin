@@ -145,7 +145,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
     <ExtensionDescription>Windows Media Player plugin.</ExtensionDescription>
     <VersionDescription />
     <DevelopmentStatus>Stable</DevelopmentStatus>
-    <OnlineLocation>http://wmplayer-mediaportal-plugin.googlecode.com/files/WMPlayer_0.1.1.0_Stable.mpe1</OnlineLocation>
+    <OnlineLocation>http://wmplayer-mediaportal-plugin.googlecode.com/files/WMPlayer_0.1.0.0_Stable.mpe1</OnlineLocation>
     <ReleaseDate>2010-11-06T18:55:36</ReleaseDate>
     <Tags>wmp,windows media player</Tags>
     <Location>D:\Development\MediaPortal\SVN\WMPlayer\trunk\MPE\WMPlayer_[Version]_[DevelopmentStatus].mpe1</Location>
