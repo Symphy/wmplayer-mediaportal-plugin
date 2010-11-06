@@ -135,19 +135,19 @@ Click Next to continue or Cancel to exit Setup.</Value>
     <Author>Sieds Tilstra (Symphy)</Author>
     <HomePage>http://wmplayer-mediaportal-plugin.googlecode.com</HomePage>
     <ForumPage>http://forum.team-mediaportal.com/asio-music-player-245/</ForumPage>
-    <UpdateUrl />
+    <UpdateUrl>http://wmplayer-mediaportal-plugin.googlecode.com/svn/trunk/MPE/update.xml</UpdateUrl>
     <Version>
       <Major>0</Major>
       <Minor>1</Minor>
       <Build>0</Build>
       <Revision>0</Revision>
     </Version>
-    <ExtensionDescription>Windows Media Player plugin</ExtensionDescription>
+    <ExtensionDescription>Windows Media Player plugin.</ExtensionDescription>
     <VersionDescription />
     <DevelopmentStatus>Stable</DevelopmentStatus>
-    <OnlineLocation />
+    <OnlineLocation>http://wmplayer-mediaportal-plugin.googlecode.com/files/WMPlayer_0.1.1.0_Stable.mpe1</OnlineLocation>
     <ReleaseDate>2010-11-06T18:55:36</ReleaseDate>
-    <Tags>wmp</Tags>
+    <Tags>wmp,windows media player</Tags>
     <Location>D:\Development\MediaPortal\SVN\WMPlayer\trunk\MPE\WMPlayer_[Version]_[DevelopmentStatus].mpe1</Location>
     <Params>
       <Items>
@@ -195,5 +195,8 @@ Click Next to continue or Cancel to exit Setup.</Value>
   <ProjectSettings>
     <FolderGroups />
     <ProjectFilename>D:\Development\MediaPortal\SVN\WMPlayer\trunk\MPE\WMPlayer.xmp2</ProjectFilename>
+    <UpdatePath1>D:\Development\MediaPortal\SVN\WMPlayer\trunk\MPE\update.xml</UpdatePath1>
+    <UpdatePath2 />
+    <UpdatePath3 />
   </ProjectSettings>
 </PackageClass>
