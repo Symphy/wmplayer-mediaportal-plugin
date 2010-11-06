@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMPlayer", "WMPlayer\WMPlayer.csproj", "{270891C0-2481-49A1-ACEC-0B9F09ED070C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{9B1F96E7-B462-4536-93D7-477B3925ACC5}"
+	ProjectSection(SolutionItems) = preProject
+		Doc\Readme.txt = Doc\Readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{810D4FF4-5E37-4957-9417-7C5E0E068968}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\SetDirectories.bat = Dependencies\SetDirectories.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{270891C0-2481-49A1-ACEC-0B9F09ED070C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{270891C0-2481-49A1-ACEC-0B9F09ED070C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{270891C0-2481-49A1-ACEC-0B9F09ED070C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{270891C0-2481-49A1-ACEC-0B9F09ED070C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
