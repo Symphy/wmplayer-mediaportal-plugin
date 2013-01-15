@@ -1,8 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMPlayer", "WMPlayer\WMPlayer.csproj", "{270891C0-2481-49A1-ACEC-0B9F09ED070C}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{9B1F96E7-B462-4536-93D7-477B3925ACC5}"
 	ProjectSection(SolutionItems) = preProject
 		Doc\Readme.txt = Doc\Readme.txt
@@ -12,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencie
 	ProjectSection(SolutionItems) = preProject
 		Dependencies\SetDirectories.bat = Dependencies\SetDirectories.bat
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMPlayer", "WMPlayer\WMPlayer.csproj", "{270891C0-2481-49A1-ACEC-0B9F09ED070C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

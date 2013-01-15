@@ -127,8 +127,47 @@ Click Next to continue or Cancel to exit Setup.</Value>
     </Items>
   </Sections>
   <Dependencies>
-    <Items />
+    <Items>
+      <DependencyItem>
+        <Type>MediaPortal</Type>
+        <Id />
+        <MinVersion>
+          <Major>1</Major>
+          <Minor>1</Minor>
+          <Build>6</Build>
+          <Revision>27644</Revision>
+        </MinVersion>
+        <MaxVersion>
+          <Major>1</Major>
+          <Minor>1</Minor>
+          <Build>6</Build>
+          <Revision>27644</Revision>
+        </MaxVersion>
+        <WarnOnly>true</WarnOnly>
+        <Message>This version of WMPlayer requires MediaPortal 1.2.0 Beta or higher!</Message>
+        <Name>MediaPortal</Name>
+      </DependencyItem>
+    </Items>
   </Dependencies>
+  <PluginDependencies>
+    <Items>
+      <PluginDependencyItem AssemblyName="WMPlayer.dll">
+        <CompatibleVersion>
+          <Items>
+            <CompatibleVersionItem>
+              <MinRequiredVersion>1.2.200.0</MinRequiredVersion>
+              <DesignedForVersion>1.2.200.0</DesignedForVersion>
+            </CompatibleVersionItem>
+          </Items>
+        </CompatibleVersion>
+        <SubSystemsUsed>
+          <Items>
+            <SubSystemItem Name="MP.DB.Music" />
+          </Items>
+        </SubSystemsUsed>
+      </PluginDependencyItem>
+    </Items>
+  </PluginDependencies>
   <GeneralInfo>
     <Name>WMPlayer</Name>
     <Id>553ded50-1278-42e5-8f45-43d66cfce081</Id>
@@ -139,14 +178,14 @@ Click Next to continue or Cancel to exit Setup.</Value>
     <Version>
       <Major>0</Major>
       <Minor>1</Minor>
-      <Build>0</Build>
+      <Build>1</Build>
       <Revision>0</Revision>
     </Version>
     <ExtensionDescription>Windows Media Player plugin.</ExtensionDescription>
     <VersionDescription />
-    <DevelopmentStatus>Stable</DevelopmentStatus>
+    <DevelopmentStatus>Beta</DevelopmentStatus>
     <OnlineLocation>http://wmplayer-mediaportal-plugin.googlecode.com/files/WMPlayer_0.1.0.0_Stable.mpe1</OnlineLocation>
-    <ReleaseDate>2010-11-06T18:55:36</ReleaseDate>
+    <ReleaseDate>2013-01-16T18:55:36</ReleaseDate>
     <Tags>wmp,windows media player</Tags>
     <Location>D:\Development\MediaPortal\SVN\WMPlayer\trunk\MPE\WMPlayer_[Version]_[DevelopmentStatus].mpe1</Location>
     <Params>
@@ -194,9 +233,10 @@ Click Next to continue or Cancel to exit Setup.</Value>
   </UniqueFileList>
   <ProjectSettings>
     <FolderGroups />
-    <ProjectFilename>D:\Development\MediaPortal\SVN\WMPlayer\trunk\MPE\WMPlayer.xmp2</ProjectFilename>
+    <ProjectFilename>WMPlayer.xmp2</ProjectFilename>
     <UpdatePath1>D:\Development\MediaPortal\SVN\WMPlayer\trunk\MPE\update.xml</UpdatePath1>
     <UpdatePath2 />
     <UpdatePath3 />
   </ProjectSettings>
+  <IsSkin>false</IsSkin>
 </PackageClass>
