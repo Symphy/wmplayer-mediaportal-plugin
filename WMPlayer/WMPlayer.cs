@@ -26,6 +26,8 @@ using System.Timers;
 using MediaPortal.GUI.Library;
 using AxWMPLib;
 using WMPLib;
+using MediaPortal.GUI.Library;
+using Action = MediaPortal.GUI.Library.Action;
 
 namespace MediaPortal.Player.WMPlayer
 {
@@ -164,13 +166,21 @@ namespace MediaPortal.Player.WMPlayer
 			confForm.ShowDialog();
 		}
 
-		public override string VersionNumber
-		{
-			get
-			{
-				return Assembly.GetExecutingAssembly().GetName().Version.ToString();
-			}
-		}
+    public override string VersionNumber
+    {
+      get
+      {
+        // Get all Informational Version attributes on this assembly
+        object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyInformationalVersionAttribute), false);
+
+        // If there aren't any Informational Version attributes, return the assembly version
+        if (attributes.Length == 0)
+          return Assembly.GetExecutingAssembly().GetName().Version.ToString();
+
+        // If there is a Informational Version attribute, return its value
+        return ((AssemblyInformationalVersionAttribute)attributes[0]).InformationalVersion;
+      }
+    }
 
 		#endregion
 
@@ -619,7 +629,7 @@ namespace MediaPortal.Player.WMPlayer
 			}
 		}
 
-		private void OnNewAction(Action action)
+    private void OnNewAction(Action action)
 		{
 			//Log.Debug(
 			// "BASS: Action: {0}",
@@ -627,17 +637,17 @@ namespace MediaPortal.Player.WMPlayer
 
 			switch (action.wID)
 			{
-				case Action.ActionType.ACTION_FORWARD:
-				case Action.ActionType.ACTION_MUSIC_FORWARD:
+        case Action.ActionType.ACTION_FORWARD:
+        case Action.ActionType.ACTION_MUSIC_FORWARD:
 					Forward();
 					break;
 
-				case Action.ActionType.ACTION_REWIND:
-				case Action.ActionType.ACTION_MUSIC_REWIND:
+        case Action.ActionType.ACTION_REWIND:
+        case Action.ActionType.ACTION_MUSIC_REWIND:
 					Rewind();
 					break;
 
-				case Action.ActionType.ACTION_TOGGLE_MUSIC_GAP:
+        case Action.ActionType.ACTION_TOGGLE_MUSIC_GAP:
 					break;
 			}
 		}
