@@ -1,5 +1,9 @@
 #summary Version history for the WMPlayer MediaPortal plugin.
 
+== Version 0.1.1.0 beta ==
+=== Changes: ===
+  * Updated to work with MediaPortal 1.3.0 beta.
+
 == Version 0.1.0.0 stable ==
 === Changes: ===
   * Available in MPEInstaller as "known extension".
